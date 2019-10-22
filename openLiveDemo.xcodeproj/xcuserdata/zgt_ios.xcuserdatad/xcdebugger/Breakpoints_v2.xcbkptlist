@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BD17C9E5-034B-4B2E-92ED-F537007D4E22"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2806DAC9-40F7-4ED2-AC2A-D092C95F9E6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "openLiveDemo/LiveRoom/LiveViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "setupAgoraKit()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "416C27B9-CD1C-4D9E-A5C2-AFEAB82CF9CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "openLiveDemo/LiveRoom/LiveViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "rtmKit(_:connectionStateChanged:reason:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D71D11C-B8FF-4ECE-9A8D-EE36B544FEBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "openLiveDemo/RtcLive/RtcLiveRoomVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "startReplayKitBroadcasting()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D71D11C-B8FF-4ECE-9A8D-EE36B544FEBF - 7e313637a29c4d3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "openLiveDemo.RtcLiveRoomVC.(startReplayKitBroadcasting in _2EDCA9A178087219DE255EF671125FFB)() -&gt; ()"
+                  moduleName = "openLiveDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zgt_ios/Desktop/openLiveDemo/openLiveDemo/RtcLive/RtcLiveRoomVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "1480">
+               </Location>
+               <Location
+                  uuid = "3D71D11C-B8FF-4ECE-9A8D-EE36B544FEBF - 4486f4853f5319ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.RPBroadcastActivityViewController&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in openLiveDemo.RtcLiveRoomVC.(startReplayKitBroadcasting in _2EDCA9A178087219DE255EF671125FFB)() -&gt; ()"
+                  moduleName = "openLiveDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zgt_ios/Desktop/openLiveDemo/openLiveDemo/RtcLive/RtcLiveRoomVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

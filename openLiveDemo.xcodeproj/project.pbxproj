@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B02AD4592341E8790082A532 /* ToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02AD4582341E8780082A532 /* ToolView.swift */; };
+		B02D684D23500B750052839A /* RtcViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D684C23500B750052839A /* RtcViewModel.swift */; };
+		B02D6850235024930052839A /* RtcLiveRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D684F235024930052839A /* RtcLiveRoomVC.swift */; };
+		B04584DD235174D1000EF785 /* AgoraRtmKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04584DC235174D1000EF785 /* AgoraRtmKit.framework */; };
+		B04C083C2340D6790032AF69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C083B2340D6790032AF69 /* AppDelegate.swift */; };
+		B04C08402340D6790032AF69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C083F2340D6790032AF69 /* ViewController.swift */; };
+		B04C08452340D67A0032AF69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04C08442340D67A0032AF69 /* Assets.xcassets */; };
+		B04C08482340D67A0032AF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04C08462340D67A0032AF69 /* LaunchScreen.storyboard */; };
+		B04C08622340D8390032AF69 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08612340D8390032AF69 /* Accelerate.framework */; };
+		B04C08642340D8410032AF69 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08632340D8410032AF69 /* AudioToolbox.framework */; };
+		B04C08662340D8480032AF69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08652340D8480032AF69 /* AVFoundation.framework */; };
+		B04C08682340D8500032AF69 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08672340D8500032AF69 /* CoreMedia.framework */; };
+		B04C086A2340D8560032AF69 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08692340D8560032AF69 /* CoreML.framework */; };
+		B04C086C2340D85C0032AF69 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086B2340D85C0032AF69 /* CoreTelephony.framework */; };
+		B04C086E2340D86B0032AF69 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086D2340D8650032AF69 /* libc++.tbd */; };
+		B04C08702340D8780032AF69 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086F2340D8740032AF69 /* libresolv.tbd */; };
+		B04C08722340D8810032AF69 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08712340D8810032AF69 /* SystemConfiguration.framework */; };
+		B04C08742340D8890032AF69 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08732340D8890032AF69 /* VideoToolbox.framework */; };
+		B06D3FC62340DC4D00516844 /* VideoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D3FC12340DC4C00516844 /* VideoSession.swift */; };
+		B06D3FC72340DC4D00516844 /* VideoViewLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D3FC22340DC4C00516844 /* VideoViewLayouter.swift */; };
+		B06D3FC82340DC4D00516844 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D3FC32340DC4C00516844 /* VideoView.swift */; };
+		B06D3FC92340DC4D00516844 /* LiveRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D3FC42340DC4C00516844 /* LiveRoomViewController.swift */; };
+		B06D3FCF2340DC9B00516844 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B06D3FCC2340DC9B00516844 /* libcrypto.a */; };
+		B06D3FD02340DC9B00516844 /* AgoraRtcCryptoLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06D3FCD2340DC9B00516844 /* AgoraRtcCryptoLoader.framework */; };
+		B06D3FD12340DC9B00516844 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06D3FCE2340DC9B00516844 /* AgoraRtcEngineKit.framework */; };
+		B099DA9F23502C6900361477 /* RtcVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099DA9E23502C6900361477 /* RtcVideoView.swift */; };
+		B099DAA123502D6A00361477 /* RtcVideoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099DAA023502D6A00361477 /* RtcVideoSession.swift */; };
+		B0B3F5CB234C7DCA00E0BA02 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02A115B234C63BB0061DDDB /* ReplayKit.framework */; };
+		B0B3F5CE234C7DCB00E0BA02 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F5CD234C7DCB00E0BA02 /* SampleHandler.swift */; };
+		B0B3F5E0234C7DCB00E0BA02 /* openLiveDemoScreenShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0B3F5CA234C7DCA00E0BA02 /* openLiveDemoScreenShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0B3F5F1234C848700E0BA02 /* AgoraAudioResample.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F5E8234C848600E0BA02 /* AgoraAudioResample.mm */; };
+		B0B3F5F2234C848700E0BA02 /* AgoraAudioProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F5EA234C848600E0BA02 /* AgoraAudioProcessing.mm */; };
+		B0B3F5F3234C848700E0BA02 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F5EB234C848700E0BA02 /* KeyCenter.swift */; };
+		B0B3F5F5234C848700E0BA02 /* AgoraUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F5EF234C848700E0BA02 /* AgoraUploader.swift */; };
+		B0B3F5F9234C84F400E0BA02 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3F5F8234C84F400E0BA02 /* AgoraRtcEngineKit.framework */; };
+		B0B3F5FA234C851800E0BA02 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08612340D8390032AF69 /* Accelerate.framework */; };
+		B0B3F5FB234C852500E0BA02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08632340D8410032AF69 /* AudioToolbox.framework */; };
+		B0B3F5FC234C852E00E0BA02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08652340D8480032AF69 /* AVFoundation.framework */; };
+		B0B3F5FD234C854800E0BA02 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08672340D8500032AF69 /* CoreMedia.framework */; };
+		B0B3F5FE234C855200E0BA02 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08692340D8560032AF69 /* CoreML.framework */; };
+		B0B3F5FF234C855C00E0BA02 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086B2340D85C0032AF69 /* CoreTelephony.framework */; };
+		B0B3F600234C857000E0BA02 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086D2340D8650032AF69 /* libc++.tbd */; };
+		B0B3F602234C859400E0BA02 /* libios_resampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3F601234C859400E0BA02 /* libios_resampler.a */; };
+		B0B3F603234C85BE00E0BA02 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C086F2340D8740032AF69 /* libresolv.tbd */; };
+		B0B3F604234C85C900E0BA02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08712340D8810032AF69 /* SystemConfiguration.framework */; };
+		B0B3F605234C85D300E0BA02 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04C08732340D8890032AF69 /* VideoToolbox.framework */; };
+		B0B3F609234DB61400E0BA02 /* RtcVSContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F608234DB61400E0BA02 /* RtcVSContainerView.swift */; };
+		B0B3F60B234DF2D400E0BA02 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3F60A234DF2D400E0BA02 /* KeyCenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0B3F5DE234C7DCB00E0BA02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04C08302340D6790032AF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0B3F5C9234C7DCA00E0BA02;
+			remoteInfo = openLiveDemoScreenShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B02A1167234C63BB0061DDDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0B3F5E0234C7DCB00E0BA02 /* openLiveDemoScreenShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B02A115B234C63BB0061DDDB /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		B02A115D234C63BB0061DDDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B02AD4582341E8780082A532 /* ToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolView.swift; sourceTree = "<group>"; };
+		B02D684C23500B750052839A /* RtcViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcViewModel.swift; sourceTree = "<group>"; };
+		B02D684F235024930052839A /* RtcLiveRoomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcLiveRoomVC.swift; sourceTree = "<group>"; };
+		B04584DC235174D1000EF785 /* AgoraRtmKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtmKit.framework; sourceTree = "<group>"; };
+		B04C08382340D6790032AF69 /* openLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04C083B2340D6790032AF69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B04C083F2340D6790032AF69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B04C08442340D67A0032AF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04C08472340D67A0032AF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B04C08492340D67A0032AF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04C08612340D8390032AF69 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B04C08632340D8410032AF69 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B04C08652340D8480032AF69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B04C08672340D8500032AF69 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B04C08692340D8560032AF69 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		B04C086B2340D85C0032AF69 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B04C086D2340D8650032AF69 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B04C086F2340D8740032AF69 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B04C08712340D8810032AF69 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B04C08732340D8890032AF69 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B06D3FC12340DC4C00516844 /* VideoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSession.swift; sourceTree = "<group>"; };
+		B06D3FC22340DC4C00516844 /* VideoViewLayouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewLayouter.swift; sourceTree = "<group>"; };
+		B06D3FC32340DC4C00516844 /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		B06D3FC42340DC4C00516844 /* LiveRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomViewController.swift; sourceTree = "<group>"; };
+		B06D3FCC2340DC9B00516844 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		B06D3FCD2340DC9B00516844 /* AgoraRtcCryptoLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcCryptoLoader.framework; sourceTree = "<group>"; };
+		B06D3FCE2340DC9B00516844 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+		B099DA9E23502C6900361477 /* RtcVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcVideoView.swift; sourceTree = "<group>"; };
+		B099DAA023502D6A00361477 /* RtcVideoSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcVideoSession.swift; sourceTree = "<group>"; };
+		B0B3F5CA234C7DCA00E0BA02 /* openLiveDemoScreenShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = openLiveDemoScreenShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B3F5CD234C7DCB00E0BA02 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		B0B3F5CF234C7DCB00E0BA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B3F5E7234C848600E0BA02 /* openLiveDemoScreenShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openLiveDemoScreenShare-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0B3F5E8234C848600E0BA02 /* AgoraAudioResample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioResample.mm; sourceTree = "<group>"; };
+		B0B3F5E9234C848600E0BA02 /* external_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = external_resampler.h; sourceTree = "<group>"; };
+		B0B3F5EA234C848600E0BA02 /* AgoraAudioProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioProcessing.mm; sourceTree = "<group>"; };
+		B0B3F5EB234C848700E0BA02 /* KeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		B0B3F5EC234C848700E0BA02 /* AgoraAudioCriticalSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioCriticalSection.h; sourceTree = "<group>"; };
+		B0B3F5ED234C848700E0BA02 /* AgoraAudioProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioProcessing.h; sourceTree = "<group>"; };
+		B0B3F5EF234C848700E0BA02 /* AgoraUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgoraUploader.swift; sourceTree = "<group>"; };
+		B0B3F5F0234C848700E0BA02 /* AgoraAudioResample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioResample.h; sourceTree = "<group>"; };
+		B0B3F5F8234C84F400E0BA02 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcEngineKit.framework; path = openLiveDemo/libs/AgoraRtcEngineKit.framework; sourceTree = SOURCE_ROOT; };
+		B0B3F601234C859400E0BA02 /* libios_resampler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libios_resampler.a; sourceTree = "<group>"; };
+		B0B3F606234D809F00E0BA02 /* openLiveDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLiveDemo.entitlements; sourceTree = "<group>"; };
+		B0B3F607234D817900E0BA02 /* openLiveDemoScreenShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = openLiveDemoScreenShare.entitlements; sourceTree = "<group>"; };
+		B0B3F608234DB61400E0BA02 /* RtcVSContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcVSContainerView.swift; sourceTree = "<group>"; };
+		B0B3F60A234DF2D400E0BA02 /* KeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B04C08352340D6790032AF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04C08742340D8890032AF69 /* VideoToolbox.framework in Frameworks */,
+				B04C08622340D8390032AF69 /* Accelerate.framework in Frameworks */,
+				B04584DD235174D1000EF785 /* AgoraRtmKit.framework in Frameworks */,
+				B04C08662340D8480032AF69 /* AVFoundation.framework in Frameworks */,
+				B04C08702340D8780032AF69 /* libresolv.tbd in Frameworks */,
+				B04C08642340D8410032AF69 /* AudioToolbox.framework in Frameworks */,
+				B04C086E2340D86B0032AF69 /* libc++.tbd in Frameworks */,
+				B06D3FCF2340DC9B00516844 /* libcrypto.a in Frameworks */,
+				B04C086A2340D8560032AF69 /* CoreML.framework in Frameworks */,
+				B04C086C2340D85C0032AF69 /* CoreTelephony.framework in Frameworks */,
+				B06D3FD02340DC9B00516844 /* AgoraRtcCryptoLoader.framework in Frameworks */,
+				B04C08722340D8810032AF69 /* SystemConfiguration.framework in Frameworks */,
+				B04C08682340D8500032AF69 /* CoreMedia.framework in Frameworks */,
+				B06D3FD12340DC9B00516844 /* AgoraRtcEngineKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3F5C7234C7DCA00E0BA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3F5FD234C854800E0BA02 /* CoreMedia.framework in Frameworks */,
+				B0B3F605234C85D300E0BA02 /* VideoToolbox.framework in Frameworks */,
+				B0B3F5FE234C855200E0BA02 /* CoreML.framework in Frameworks */,
+				B0B3F5FA234C851800E0BA02 /* Accelerate.framework in Frameworks */,
+				B0B3F603234C85BE00E0BA02 /* libresolv.tbd in Frameworks */,
+				B0B3F5F9234C84F400E0BA02 /* AgoraRtcEngineKit.framework in Frameworks */,
+				B0B3F5FF234C855C00E0BA02 /* CoreTelephony.framework in Frameworks */,
+				B0B3F5FC234C852E00E0BA02 /* AVFoundation.framework in Frameworks */,
+				B0B3F600234C857000E0BA02 /* libc++.tbd in Frameworks */,
+				B0B3F5CB234C7DCA00E0BA02 /* ReplayKit.framework in Frameworks */,
+				B0B3F5FB234C852500E0BA02 /* AudioToolbox.framework in Frameworks */,
+				B0B3F604234C85C900E0BA02 /* SystemConfiguration.framework in Frameworks */,
+				B0B3F602234C859400E0BA02 /* libios_resampler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B02D684E235024540052839A /* RtcLive */ = {
+			isa = PBXGroup;
+			children = (
+				B02D684F235024930052839A /* RtcLiveRoomVC.swift */,
+				B0B3F608234DB61400E0BA02 /* RtcVSContainerView.swift */,
+				B02D684C23500B750052839A /* RtcViewModel.swift */,
+				B099DAA023502D6A00361477 /* RtcVideoSession.swift */,
+				B099DA9E23502C6900361477 /* RtcVideoView.swift */,
+			);
+			path = RtcLive;
+			sourceTree = "<group>";
+		};
+		B04C082F2340D6790032AF69 = {
+			isa = PBXGroup;
+			children = (
+				B04C083A2340D6790032AF69 /* openLiveDemo */,
+				B0B3F5CC234C7DCA00E0BA02 /* openLiveDemoScreenShare */,
+				B04C08392340D6790032AF69 /* Products */,
+				B04C08602340D8380032AF69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B04C08392340D6790032AF69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04C08382340D6790032AF69 /* openLiveDemo.app */,
+				B0B3F5CA234C7DCA00E0BA02 /* openLiveDemoScreenShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04C083A2340D6790032AF69 /* openLiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3F606234D809F00E0BA02 /* openLiveDemo.entitlements */,
+				B04C083B2340D6790032AF69 /* AppDelegate.swift */,
+				B04C083F2340D6790032AF69 /* ViewController.swift */,
+				B06D3FC42340DC4C00516844 /* LiveRoomViewController.swift */,
+				B02AD4582341E8780082A532 /* ToolView.swift */,
+				B0B3F60A234DF2D400E0BA02 /* KeyCenter.swift */,
+				B06D3FC12340DC4C00516844 /* VideoSession.swift */,
+				B06D3FC32340DC4C00516844 /* VideoView.swift */,
+				B06D3FC22340DC4C00516844 /* VideoViewLayouter.swift */,
+				B02D684E235024540052839A /* RtcLive */,
+				B06D3FCB2340DC9B00516844 /* libs */,
+				B04C08442340D67A0032AF69 /* Assets.xcassets */,
+				B04C08462340D67A0032AF69 /* LaunchScreen.storyboard */,
+				B04C08492340D67A0032AF69 /* Info.plist */,
+			);
+			path = openLiveDemo;
+			sourceTree = "<group>";
+		};
+		B04C08602340D8380032AF69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04C08732340D8890032AF69 /* VideoToolbox.framework */,
+				B04C08712340D8810032AF69 /* SystemConfiguration.framework */,
+				B04C086F2340D8740032AF69 /* libresolv.tbd */,
+				B04C086D2340D8650032AF69 /* libc++.tbd */,
+				B04C086B2340D85C0032AF69 /* CoreTelephony.framework */,
+				B04C08692340D8560032AF69 /* CoreML.framework */,
+				B04C08672340D8500032AF69 /* CoreMedia.framework */,
+				B04C08652340D8480032AF69 /* AVFoundation.framework */,
+				B04C08632340D8410032AF69 /* AudioToolbox.framework */,
+				B04C08612340D8390032AF69 /* Accelerate.framework */,
+				B02A115B234C63BB0061DDDB /* ReplayKit.framework */,
+				B02A115D234C63BB0061DDDB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B06D3FCB2340DC9B00516844 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B04584DC235174D1000EF785 /* AgoraRtmKit.framework */,
+				B06D3FCC2340DC9B00516844 /* libcrypto.a */,
+				B06D3FCD2340DC9B00516844 /* AgoraRtcCryptoLoader.framework */,
+				B06D3FCE2340DC9B00516844 /* AgoraRtcEngineKit.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		B0B3F5CC234C7DCA00E0BA02 /* openLiveDemoScreenShare */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3F607234D817900E0BA02 /* openLiveDemoScreenShare.entitlements */,
+				B0B3F5F8234C84F400E0BA02 /* AgoraRtcEngineKit.framework */,
+				B0B3F5CD234C7DCB00E0BA02 /* SampleHandler.swift */,
+				B0B3F5EF234C848700E0BA02 /* AgoraUploader.swift */,
+				B0B3F5EC234C848700E0BA02 /* AgoraAudioCriticalSection.h */,
+				B0B3F5ED234C848700E0BA02 /* AgoraAudioProcessing.h */,
+				B0B3F5EA234C848600E0BA02 /* AgoraAudioProcessing.mm */,
+				B0B3F5F0234C848700E0BA02 /* AgoraAudioResample.h */,
+				B0B3F5E8234C848600E0BA02 /* AgoraAudioResample.mm */,
+				B0B3F5E9234C848600E0BA02 /* external_resampler.h */,
+				B0B3F5EB234C848700E0BA02 /* KeyCenter.swift */,
+				B0B3F601234C859400E0BA02 /* libios_resampler.a */,
+				B0B3F5CF234C7DCB00E0BA02 /* Info.plist */,
+				B0B3F5E7234C848600E0BA02 /* openLiveDemoScreenShare-Bridging-Header.h */,
+			);
+			path = openLiveDemoScreenShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B04C08372340D6790032AF69 /* openLiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04C084C2340D67A0032AF69 /* Build configuration list for PBXNativeTarget "openLiveDemo" */;
+			buildPhases = (
+				B04C08342340D6790032AF69 /* Sources */,
+				B04C08352340D6790032AF69 /* Frameworks */,
+				B04C08362340D6790032AF69 /* Resources */,
+				B02A1167234C63BB0061DDDB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0B3F5DF234C7DCB00E0BA02 /* PBXTargetDependency */,
+			);
+			name = openLiveDemo;
+			productName = openLiveDemo;
+			productReference = B04C08382340D6790032AF69 /* openLiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0B3F5C9234C7DCA00E0BA02 /* openLiveDemoScreenShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B3F5E4234C7DCB00E0BA02 /* Build configuration list for PBXNativeTarget "openLiveDemoScreenShare" */;
+			buildPhases = (
+				B0B3F5C6234C7DCA00E0BA02 /* Sources */,
+				B0B3F5C7234C7DCA00E0BA02 /* Frameworks */,
+				B0B3F5C8234C7DCA00E0BA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openLiveDemoScreenShare;
+			productName = openLiveDemoScreenShare;
+			productReference = B0B3F5CA234C7DCA00E0BA02 /* openLiveDemoScreenShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04C08302340D6790032AF69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "寇松涛";
+				TargetAttributes = {
+					B04C08372340D6790032AF69 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					B0B3F5C9234C7DCA00E0BA02 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = B04C08332340D6790032AF69 /* Build configuration list for PBXProject "openLiveDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04C082F2340D6790032AF69;
+			productRefGroup = B04C08392340D6790032AF69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B04C08372340D6790032AF69 /* openLiveDemo */,
+				B0B3F5C9234C7DCA00E0BA02 /* openLiveDemoScreenShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B04C08362340D6790032AF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04C08482340D67A0032AF69 /* LaunchScreen.storyboard in Resources */,
+				B04C08452340D67A0032AF69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3F5C8234C7DCA00E0BA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B04C08342340D6790032AF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06D3FC82340DC4D00516844 /* VideoView.swift in Sources */,
+				B06D3FC62340DC4D00516844 /* VideoSession.swift in Sources */,
+				B02D684D23500B750052839A /* RtcViewModel.swift in Sources */,
+				B04C08402340D6790032AF69 /* ViewController.swift in Sources */,
+				B0B3F609234DB61400E0BA02 /* RtcVSContainerView.swift in Sources */,
+				B06D3FC72340DC4D00516844 /* VideoViewLayouter.swift in Sources */,
+				B02AD4592341E8790082A532 /* ToolView.swift in Sources */,
+				B04C083C2340D6790032AF69 /* AppDelegate.swift in Sources */,
+				B099DA9F23502C6900361477 /* RtcVideoView.swift in Sources */,
+				B0B3F60B234DF2D400E0BA02 /* KeyCenter.swift in Sources */,
+				B02D6850235024930052839A /* RtcLiveRoomVC.swift in Sources */,
+				B06D3FC92340DC4D00516844 /* LiveRoomViewController.swift in Sources */,
+				B099DAA123502D6A00361477 /* RtcVideoSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3F5C6234C7DCA00E0BA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3F5F3234C848700E0BA02 /* KeyCenter.swift in Sources */,
+				B0B3F5F5234C848700E0BA02 /* AgoraUploader.swift in Sources */,
+				B0B3F5F1234C848700E0BA02 /* AgoraAudioResample.mm in Sources */,
+				B0B3F5F2234C848700E0BA02 /* AgoraAudioProcessing.mm in Sources */,
+				B0B3F5CE234C7DCB00E0BA02 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0B3F5DF234C7DCB00E0BA02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0B3F5C9234C7DCA00E0BA02 /* openLiveDemoScreenShare */;
+			targetProxy = B0B3F5DE234C7DCB00E0BA02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B04C08462340D67A0032AF69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04C08472340D67A0032AF69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04C084A2340D67A0032AF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B04C084B2340D67A0032AF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B04C084D2340D67A0032AF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = openLiveDemo/openLiveDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8256B7H649;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				INFOPLIST_FILE = openLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgtfintech.openLIve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B04C084E2340D67A0032AF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = openLiveDemo/openLiveDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8256B7H649;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				INFOPLIST_FILE = openLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgtfintech.openLIve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B0B3F5E5234C7DCB00E0BA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = openLiveDemoScreenShare/openLiveDemoScreenShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8256B7H649;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				INFOPLIST_FILE = openLiveDemoScreenShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openLiveDemoScreenShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgtfintech.openLIve.ScreenBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "openLiveDemoScreenShare/openLiveDemoScreenShare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0B3F5E6234C7DCB00E0BA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = openLiveDemoScreenShare/openLiveDemoScreenShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8256B7H649;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openLiveDemo/libs",
+				);
+				INFOPLIST_FILE = openLiveDemoScreenShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openLiveDemoScreenShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgtfintech.openLIve.ScreenBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "openLiveDemoScreenShare/openLiveDemoScreenShare-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B04C08332340D6790032AF69 /* Build configuration list for PBXProject "openLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04C084A2340D67A0032AF69 /* Debug */,
+				B04C084B2340D67A0032AF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04C084C2340D67A0032AF69 /* Build configuration list for PBXNativeTarget "openLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04C084D2340D67A0032AF69 /* Debug */,
+				B04C084E2340D67A0032AF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0B3F5E4234C7DCB00E0BA02 /* Build configuration list for PBXNativeTarget "openLiveDemoScreenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B3F5E5234C7DCB00E0BA02 /* Debug */,
+				B0B3F5E6234C7DCB00E0BA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04C08302340D6790032AF69 /* Project object */;
+}
